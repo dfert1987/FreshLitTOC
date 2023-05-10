@@ -8,7 +8,22 @@ import '../Styles/Table.css';
 export const Table = () => {
     return (
         <div className='table-container all-columns col-14'>
-            <div className='table-headers col-7'></div>
+            <div className='table-headers all-columns col-7'>
+                <div className='lexile-header lex-col'>
+                    <h5 className='header lex'>Lexile</h5>
+                </div>
+                <div className='skills-header skills-col'>
+                    <h5 className='header skills'>Key Skills</h5>
+                </div>
+                <div className='connections-header connections-col'>
+                    <h5 className='header connections'>
+                        Connections to <i>Into Literature</i>{' '}
+                    </h5>
+                </div>
+                <div className='resources-header resources-col'>
+                    <h5 className='header resources'>Resources</h5>
+                </div>
+            </div>
         </div>
     );
 };

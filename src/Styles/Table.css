@@ -5,12 +5,51 @@
 }
 
 .table-headers {
+    display: grid;
     background-color: #007071;
-    height: 3em;
     /* width: 100%; */
 }
 
+.header {
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    margin: 0;
+    padding-top: 1.75em;
+    padding-bottom: 0.75em;
+    padding-left: 0.5em;
+}
+
+.header {
+    font-family: 'Source Sans Pro';
+    text-align: left;
+}
+
+.header.lex {
+    text-align: right;
+    padding-right: 0.5em;
+    padding-left: 0;
+}
+
+.lex-col {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+.skills-col {
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+
+.connections-col {
+    grid-column-start: 8;
+    grid-column-end: 12;
+}
+
+.resources-col {
+    grid-column-start: 12;
+    grid-column-end: 15;
+}
 
 @media (min-width: 1280px) {
-    
 }
