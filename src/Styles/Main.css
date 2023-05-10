@@ -1,0 +1,145 @@
+.main-container {
+    display: grid;
+    flex-direction: column;
+    padding-top: 1em;
+    width: 100%;
+}
+
+.intro-text {
+    color: #007071;
+    display: grid;
+    font-family: 'Source Sans Pro Bold';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.17px;
+    margin-bottom: 0;
+}
+
+.intro-bullets {
+    color: #007071;
+    font-family: 'Source Sans Pro Light';
+}
+
+.intro-bullets h2 {
+    font-size: 22px;
+    margin: 0.25em;
+}
+
+.bullets-key {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-section {
+    display: grid;
+}
+
+.key-container {
+    display: grid;
+    margin-top: 17em;
+    /* margin-right: 3em; */
+}
+
+.key-header {
+    color: #231f20;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    font-weight: 600;
+}
+
+.key-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.key-icon {
+    height: 30.5px;
+    margin-right: 0.75em;
+}
+
+.key-text {
+    color: #231f20;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1.1em;
+    margin-top: 0.2em;
+}
+
+.paragraph {
+    display: grid;
+}
+
+.key-text.last {
+    margin-bottom: 0;
+}
+
+@media (min-width: 858px) {
+    .key-container {
+        margin-top: 15em;
+    }
+}
+
+@media (min-width: 865px) {
+    .key-container {
+        margin-top: 13em;
+    }
+}
+
+@media (min-width: 878px) {
+    .key-container {
+        margin-top: 11.5em;
+    }
+}
+
+@media (min-width: 893px) {
+    .key-container {
+        margin-top: 10em;
+    }
+}
+
+@media (min-width: 928px) {
+    .key-container {
+        margin-top: 8em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .key-container {
+        margin-top: 7em;
+    }
+}
+
+@media (min-width: 1280px) {
+    .intro-text {
+        font-size: 32px;
+        line-height: 40.22px;
+        padding-left: 3em;
+    }
+
+    .intro-bullets {
+        padding-left: 8em;
+    }
+
+    .intro-bullets h2 {
+        font-size: 24px;
+    }
+
+    .key-header {
+        margin-top: 1em;
+    }
+
+    .key-icon {
+        height: 33.5px;
+    }
+
+    .key-container {
+        margin-top: 8em;
+    }
+
+    .key-text {
+        font-size: 20px;
+    }
+}

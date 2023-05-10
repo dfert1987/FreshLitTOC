@@ -1,13 +1,40 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 870px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(./Assets/Fonts/SourceSansPro-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url(./Assets/Fonts/SourceSansPro-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Italic';
+    src: url(./Assets/Fonts/SourceSansPro-Italic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Black';
+    src: url(./Assets/Fonts/SourceSansPro-Black.ttf) format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Source Sans Pro Light';
+    src: url(./Assets/Fonts/SourceSansPro-Light.ttf) format('truetype');
 }

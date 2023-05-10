@@ -1,0 +1,16 @@
+.table-container {
+    display: grid;
+    margin-top: 2em;
+    width: 100%;
+}
+
+.table-headers {
+    background-color: #007071;
+    height: 3em;
+    /* width: 100%; */
+}
+
+
+@media (min-width: 1280px) {
+    
+}

@@ -1,0 +1,11 @@
+.banner-container {
+    background-color: #007071;
+    display: grid;
+    height: 12em;
+    width: 100%;
+}
+
+.fresh-lit-logo {
+    padding-top: 2.5em;
+    padding-left: 1em;
+}
