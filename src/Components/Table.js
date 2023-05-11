@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BookColumn from './BookColumn';
 import { v2data } from '../Assets/Data/V2';
 import '../Styles/Table.css';
 
@@ -6,28 +7,15 @@ export const Table = () => {
     const data = v2data;
     // ***** change this to switch between data sets
 
-    const [titles, setTitles] = useState();
-    const [genres, setGenres] = useState();
-    const [authors, setAuthors] = useState();
-    const [lexiles, setLexiles] = useState();
-    const [synops, setSynops] = useState();
-
-    useEffect(() => {
-        let justTitles = data.map((item) => item.Title);
-        setTitles(justTitles);
-
-        let justGenres = data.map((item) => item.Genre);
-        setGenres(justGenres);
-
-        let justAuthors = data.map((item) => item.Author);
-        setAuthors(justAuthors);
-
-        let justLexiles = data.map((item) => item.Lexile);
-        setLexiles(justLexiles);
-
-        let justSynops = data.map((item) => item.Synopsis);
-        setSynops(justSynops);
-    }, [data]);
+    const getAllRows = () => {
+        if (data) {
+            return data.map((row, i) => (
+                <div className='table-row all-columns col-7' key={i}>
+                    <BookColumn book={row} />
+                </div>
+            ));
+        }
+    };
 
     return (
         <div className='table-container all-columns col-14'>
@@ -47,7 +35,10 @@ export const Table = () => {
                     <h5 className='header resources'>Resources</h5>
                 </div>
             </div>
-            <div className='table-body lex-col'></div>
+            <div className='table-body all-columns col-7'>
+                {getAllRows()}
+                {/* <BookColumn data={data} /> */}
+            </div>
         </div>
     );
 };

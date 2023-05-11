@@ -31,6 +31,14 @@
     padding-left: 0;
 }
 
+.books {
+    display: grid;
+}
+
+.book {
+    display: grid;
+}
+
 .lex-col {
     grid-column-start: 1;
     grid-column-end: 6;
@@ -49,6 +57,16 @@
 .resources-col {
     grid-column-start: 12;
     grid-column-end: 15;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 1280px) {
