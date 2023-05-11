@@ -62,11 +62,16 @@
 .book-container {
     display: flex;
     flex-direction: row;
+    padding: 1em;
 }
 
 .left-side {
     display: flex;
     flex-direction: column;
+}
+
+.table-row {
+    display: grid;
 }
 
 @media (min-width: 1280px) {
