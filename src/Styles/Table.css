@@ -44,6 +44,11 @@
     grid-column-end: 6;
 }
 
+.skills-container {
+    display: grid;
+    padding: 1em;
+}
+
 .skills-col {
     grid-column-start: 6;
     grid-column-end: 8;
@@ -72,6 +77,35 @@
 
 .table-row {
     display: grid;
+}
+
+.connections-container {
+    display: grid;
+    padding: 1em;
+}
+
+.resources-container {
+    display: grid;
+    padding: 1em;
+}
+
+.language-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.connection {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons img {
+    height: 15px;
 }
 
 @media (min-width: 1280px) {

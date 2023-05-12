@@ -1,5 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import BookColumn from './BookColumn';
+import SkillsColumn from './SkillsColumn';
+import ConnectionsColumn from './ConnectionsColumn';
+import ResourcesColumn from './ResourcesColumn';
 import { v2data } from '../Assets/Data/V2';
 import '../Styles/Table.css';
 
@@ -12,6 +15,9 @@ export const Table = () => {
             return data.map((row, i) => (
                 <div className='table-row all-columns col-7' key={i}>
                     <BookColumn book={row} />
+                    <SkillsColumn book={row} />
+                    <ConnectionsColumn book={row} />
+                    <ResourcesColumn book={row} />
                 </div>
             ));
         }
@@ -35,10 +41,7 @@ export const Table = () => {
                     <h5 className='header resources'>Resources</h5>
                 </div>
             </div>
-            <div className='table-body all-columns col-7'>
-                {getAllRows()}
-                {/* <BookColumn data={data} /> */}
-            </div>
+            <div className='table-body all-columns col-7'>{getAllRows()}</div>
         </div>
     );
 };
