@@ -4,6 +4,14 @@
     width: 100%;
 }
 
+.table-body {
+    border: 2px solid #007071;
+}
+
+.tan {
+    background-color: rgb(247, 243, 228);
+}
+
 .table-headers {
     display: grid;
     background-color: #007071;
@@ -45,8 +53,13 @@
 }
 
 .skills-container {
+    border-right: 2px solid #007071;
     display: grid;
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 20px;
     padding: 1em;
+    padding-top: 0.75em;
 }
 
 .skills-col {
@@ -67,12 +80,15 @@
 .book-container {
     display: flex;
     flex-direction: row;
+    border-right: 2px solid #007071;
     padding: 1em;
 }
 
 .left-side {
     display: flex;
     flex-direction: column;
+    padding-bottom: 0.25em;
+    margin-top: 0;
 }
 
 .table-row {
@@ -80,13 +96,27 @@
 }
 
 .connections-container {
+    border-right: 2px solid #007071;
     display: grid;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-weight: 400;
     padding: 1em;
+    padding-right: 0.5em;
+    padding-top: 1em;
+}
+
+.connections-container p {
+    margin-top: 0;
+    margin-bottom: 0em;
+    line-height: 25px;
 }
 
 .resources-container {
     display: grid;
     padding: 1em;
+    padding-left: 1.5em;
+    padding-top: 1em;
 }
 
 .language-section {
@@ -106,6 +136,67 @@
 
 .icons img {
     height: 15px;
+}
+
+.title {
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+    /* position: relative;
+    bottom: .1em */
+}
+
+.genre-author {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 0.2em;
+}
+
+.synopsis {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 0.5em;
+}
+
+.lexile {
+    color: #007071;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0.2em;
+}
+
+.skills {
+    margin-top: 0.25em;
+    line-height: 25px;
+    padding-left: 0.33em;
+    margin-bottom: 0em;
+}
+
+.skill {
+    margin-left: 0.25em;
+    margin-bottom: 0.33em;
+}
+
+.language-header {
+    color: #007071;
+    font-family: 'Source Sans Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.icons a img {
+    height: 29px;
+    padding-right: 0.5em;
+    padding-bottom: 1em;
 }
 
 @media (min-width: 1280px) {

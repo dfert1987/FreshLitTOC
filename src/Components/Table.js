@@ -10,10 +10,20 @@ export const Table = () => {
     const data = v2data;
     // ***** change this to switch between data sets
 
+    const candyStripe = (i) => {
+        if (i === 0 || i % 2 === 0) {
+            return 'white';
+        } else {
+            return 'tan';
+        }
+    };
+
     const getAllRows = () => {
         if (data) {
             return data.map((row, i) => (
-                <div className='table-row all-columns col-7' key={i}>
+                <div
+                    className={`table-row all-columns col-7 ${candyStripe(i)}`}
+                    key={i}>
                     <BookColumn book={row} />
                     <SkillsColumn book={row} />
                     <ConnectionsColumn book={row} />
