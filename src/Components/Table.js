@@ -4,10 +4,11 @@ import SkillsColumn from './SkillsColumn';
 import ConnectionsColumn from './ConnectionsColumn';
 import ResourcesColumn from './ResourcesColumn';
 import { v2data } from '../Assets/Data/V2';
+import { v1data } from '../Assets/Data/V1';
 import '../Styles/Table.css';
 
 export const Table = () => {
-    const data = v2data;
+    const data = v1data;
     // ***** change this to switch between data sets
 
     const candyStripe = (i) => {
