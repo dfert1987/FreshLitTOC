@@ -26,17 +26,28 @@
     padding-top: 1.75em;
     padding-bottom: 0.75em;
     padding-left: 0.5em;
+    text-align: left;
 }
 
-.header {
-    font-family: 'Source Sans Pro';
-    text-align: left;
+.header.skills {
+    margin-top: 1.95em;
+}
+
+.header.connections {
+    padding-top: 1em;
+    padding-right: 0.1em;
+    padding-left: 0.1em;
+}
+
+.header.resources {
+    margin-top: 1.8em;
 }
 
 .header.lex {
     text-align: right;
     padding-right: 0.5em;
     padding-left: 0;
+    margin-top: 1.8em;
 }
 
 .books {
@@ -57,18 +68,18 @@
     display: grid;
     font-family: 'Source Sans Pro';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     padding: 1em;
-    padding-top: 0.75em;
+    padding-top: 0.8em;
 }
 
 .skills-col {
     grid-column-start: 6;
-    grid-column-end: 8;
+    grid-column-end: 9;
 }
 
 .connections-col {
-    grid-column-start: 8;
+    grid-column-start: 9;
     grid-column-end: 12;
 }
 
@@ -174,7 +185,7 @@
 .skills {
     margin-top: 0.25em;
     line-height: 25px;
-    padding-left: 0.33em;
+    padding-left: 0em;
     margin-bottom: 0em;
 }
 
@@ -199,5 +210,64 @@
     padding-bottom: 1em;
 }
 
+@media (min-width: 843px) {
+    .skills-container {
+        font-size: 18px;
+    }
+
+    .skills {
+        padding-left: 0.33em;
+    }
+}
+
+@media (min-width: 869px) {
+    .header.connections {
+        margin-top: 0em;
+        padding-bottom: 0;
+    }
+
+    .header.lex {
+        margin-top: 0.6em;
+    }
+
+    .header.skills {
+        margin-top: 0.705em;
+    }
+
+    .header.resources {
+        margin-top: 0.59em;
+    }
+}
+
+@media (min-width: 908px) {
+    .skills-container {
+        font-size: 20px;
+    }
+}
+
 @media (min-width: 1280px) {
+    .header.skills {
+        margin-top: .1em;
+        padding-top: 1em;
+    }
+
+    .header.lex {
+        margin-top: 0;
+        padding-top: 1em;
+    }
+
+    .header.resources {
+        margin-top: 0;
+        padding-top: 1em;
+    }
+
+    .skills-col {
+        grid-column-start: 6;
+        grid-column-end: 8;
+    }
+
+    .connections-col {
+        grid-column-start: 8;
+        grid-column-end: 12;
+    }
 }

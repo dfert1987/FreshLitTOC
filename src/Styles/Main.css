@@ -15,6 +15,8 @@
     margin-bottom: 0;
 }
 
+
+
 .intro-bullets {
     color: #007071;
     font-family: 'Source Sans Pro Light';
@@ -38,6 +40,11 @@
     display: grid;
     margin-top: 17em;
     /* margin-right: 3em; */
+}
+
+.key {
+    position: relative;
+    bottom: 1em;
 }
 
 .key-header {

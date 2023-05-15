@@ -1,4 +1,4 @@
-export const v1Data = [
+export const v1data = [
     {
         Title: 'Arrivals and Departures',
         Genre: 'Short Story',
